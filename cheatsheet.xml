@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet href="cheatsheet-xslt.xsl" type="text/xsl"?>
+
+<!DOCTYPE tags [
+    <!ELEMENT tags (tag+)>
+    <!ELEMENT tag (name, description, exampleCode?)>
+
+
+    <!ENTITY x "&lt;xsl:">
+]>
+
+
+<tags>
+    <tag>
+        <name>&x;stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"&gt;</name>
+        <description>This is an example description</description>
+    </tag>
+    <tag>
+        <name>&x;output method="html"&gt;</name>
+        <description>This is another example description</description>
+    </tag>
+    <tag>
+        <name>&x;template match="tag-name-here"&gt;</name>
+        <description>This is yet another example description</description>
+    </tag>
+    <tag>
+        <name>&x;stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"&gt;</name>
+        <description>This is an example description</description>
+    </tag>
+    <tag>
+        <name>&x;output method="html"&gt;</name>
+        <description>This is another example description</description>
+    </tag>
+    <tag>
+        <name>&x;template match="tag-name-here"&gt;</name>
+        <description>This is yet another example description</description>
+    </tag>
+    <tag>
+        <name>&x;stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"&gt;</name>
+        <description>This is an example description</description>
+    </tag>
+    <tag>
+        <name>&x;output method="html"&gt;</name>
+        <description>This is another example description</description>
+    </tag>
+    <tag>
+        <name>&x;template match="tag-name-here"&gt;</name>
+        <description>This is yet another example description</description>
+    </tag>
+    <tag>
+        <name>&x;stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"&gt;</name>
+        <description>This is an example description</description>
+    </tag>
+    <tag>
+        <name>&x;output method="html"&gt;</name>
+        <description>This is another example description</description>
+    </tag>
+    <tag>
+        <name>&x;template match="tag-name-here"&gt;</name>
+        <description>This is yet another example description</description>
+    </tag>
+    <tag>
+        <name>&x;stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"&gt;</name>
+        <description>This is an example description</description>
+    </tag>
+    <tag>
+        <name>&x;output method="html"&gt;</name>
+        <description>This is another example description</description>
+    </tag>
+    <tag>
+        <name>&x;template match="tag-name-here"&gt;</name>
+        <description>This is yet another example description</description>
+    </tag>
+    <tag>
+        <name>&x;stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"&gt;</name>
+        <description>This is an example description</description>
+    </tag>
+    <tag>
+        <name>&x;output method="html"&gt;</name>
+        <description>This is another example description</description>
+    </tag>
+    <tag>
+        <name>&x;template match="tag-name-here"&gt;</name>
+        <description>This is yet another example description</description>
+    </tag>
+</tags>
