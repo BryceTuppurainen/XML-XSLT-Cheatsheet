@@ -1,86 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet href="cheatsheet-xslt.xsl" type="text/xsl"?>
+<?xml-stylesheet type="text/xsl" href="cheatsheet-xslt.xsl"?>
 
 <!DOCTYPE tags [
-    <!ELEMENT tags (tag+)>
-    <!ELEMENT tag (name, description, exampleCode?)>
-
-
-    <!ENTITY x "&lt;xsl:">
+<!ELEMENT tags (tag+)>
+<!ELEMENT tag (tagname, description, codeContext?)>
+<!ELEMENT tagname (#PCDATA)>
+<!ELEMENT description (#PCDATA)>
+<!ELEMENT codeContext (#PCDATA)>
+<!ENTITY x "&lt;xsl:">
 ]>
-
 
 <tags>
     <tag>
-        <name>&x;stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"&gt;</name>
-        <description>This is an example description</description>
+        <tagname>&x;stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"&gt;</tagname>
+        <description>This will be the opening and closing tag of any XSLT document. It defines the version used and where the XSLT begins/ends</description>
+        <codeContext>&x;stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"&gt;&x;output method="html"/&gt;&lt;html&gt;Website Content Here&lt;/html&gt;&lt;/xsl:stylesheet&gt;</codeContext>
     </tag>
     <tag>
-        <name>&x;output method="html"&gt;</name>
-        <description>This is another example description</description>
-    </tag>
-    <tag>
-        <name>&x;template match="tag-name-here"&gt;</name>
-        <description>This is yet another example description</description>
-    </tag>
-    <tag>
-        <name>&x;stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"&gt;</name>
-        <description>This is an example description</description>
-    </tag>
-    <tag>
-        <name>&x;output method="html"&gt;</name>
-        <description>This is another example description</description>
-    </tag>
-    <tag>
-        <name>&x;template match="tag-name-here"&gt;</name>
-        <description>This is yet another example description</description>
-    </tag>
-    <tag>
-        <name>&x;stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"&gt;</name>
-        <description>This is an example description</description>
-    </tag>
-    <tag>
-        <name>&x;output method="html"&gt;</name>
-        <description>This is another example description</description>
-    </tag>
-    <tag>
-        <name>&x;template match="tag-name-here"&gt;</name>
-        <description>This is yet another example description</description>
-    </tag>
-    <tag>
-        <name>&x;stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"&gt;</name>
-        <description>This is an example description</description>
-    </tag>
-    <tag>
-        <name>&x;output method="html"&gt;</name>
-        <description>This is another example description</description>
-    </tag>
-    <tag>
-        <name>&x;template match="tag-name-here"&gt;</name>
-        <description>This is yet another example description</description>
-    </tag>
-    <tag>
-        <name>&x;stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"&gt;</name>
-        <description>This is an example description</description>
-    </tag>
-    <tag>
-        <name>&x;output method="html"&gt;</name>
-        <description>This is another example description</description>
-    </tag>
-    <tag>
-        <name>&x;template match="tag-name-here"&gt;</name>
-        <description>This is yet another example description</description>
-    </tag>
-    <tag>
-        <name>&x;stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"&gt;</name>
-        <description>This is an example description</description>
-    </tag>
-    <tag>
-        <name>&x;output method="html"&gt;</name>
-        <description>This is another example description</description>
-    </tag>
-    <tag>
-        <name>&x;template match="tag-name-here"&gt;</name>
-        <description>This is yet another example description</description>
+        <tagname>&x;output method="html"&gt;</tagname>
+        <description>This states that this XSLT document will output as HTML once the XML is parsed</description>
     </tag>
 </tags>

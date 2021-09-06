@@ -5,15 +5,16 @@
 <xsl:template match="tags">
 <html>
     <head>
-        <title>XML and XST Cheatsheet</title>
+        <link rel="stylesheet" href="cheatsheet-styles.css"/>
+        <title>XML and XSLT Cheatsheet</title>
     </head>
     <body>
-        <h1>XML and XSLT Cheatsheet</h1>
-            <xsl:for-each select="tag">
-            <h3><xsl:value-of select="name"></xsl:value-of></h3>
-            <p><xsl:value-of select="description"></xsl:value-of></p>
-            <hr/>
-            </xsl:for-each>
+        <h1>Hello World!</h1>
+        <xsl:for-each select="tag">
+            <h3><xsl:value-of select="tagname"/></h3>
+            <p><xsl:value-of select="description"/></p>
+            <div class="code-divider"><code><xsl:value-of select="codeContext"/></code></div>
+        </xsl:for-each>
     </body>
 </html>
 </xsl:template>
