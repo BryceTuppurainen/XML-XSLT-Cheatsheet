@@ -17,7 +17,12 @@
         <codeContext>&x;stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"&gt;&x;output method="html"/&gt;&lt;html&gt;Website Content Here&lt;/html&gt;&lt;/xsl:stylesheet&gt;</codeContext>
     </tag>
     <tag>
-        <tagname>&x;output method="html"&gt;</tagname>
+        <tagname>&x;output method="html"/&gt;</tagname>
         <description>This states that this XSLT document will output as HTML once the XML is parsed</description>
+        <codeContext>&x;stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"&gt;&x;output method="html"/&gt;&lt;html&gt;</codeContext>
     </tag>
+    <tag>
+        <tagname>&x;value-of select="tagname"/&gt;</tagname> <!-- <xsl:value-of select="description"/> -->
+        <description>This tag allows you to select an element that is currently within the XPath of the XSLT document, so that you can display it's value as text. Note that you can also use {tagname} to be able to use this for attribute values</description>   
+    </tag>     
 </tags>
